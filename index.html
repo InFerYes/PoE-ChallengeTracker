@@ -1,0 +1,548 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Breach League Challenges - Path of Exile: Atlas of Worlds</title>
+    <link rel="stylesheet" href="main.css" />
+    <link href="https://fonts.googleapis.com/css?family=Shadows+Into+Light" rel="stylesheet">
+    <link rel='shortcut icon' type='image/x-icon' href='favicon.ico' />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.0/jquery-ui.min.css" />
+  </head>
+  <body>
+    <div id="main" class="clearfix">
+      <h1>Path of Exile Atlas of Worlds: Breach League Challenges</h1>
+      <p class="pre">Click/Tap the challenge name and drag it to either completed or not completed list.</p>
+      <div class="rewards">
+        <div class="firstChallengeReward"></div>
+        <div class="secondChallengeReward"></div>
+        <div class="thirdChallengeReward"></div>
+      </div>
+      <div class="counter cf">
+        <div class="head leftcol">Challenges not completed: <span class="cND"></span></div>
+        <div class="head rightcol">Challenges completed: <span class="cD"></span></div>
+      </div>
+      <div id="notcompleted" class="challenges">
+        <div class="challenge" id="ch1">
+          <h2><span class="left-ornament"></span><span class="right-ornament"></span>Keep a Breach open</h2>
+          <div class="ch-content cf">
+            <p class="info">Succesfully keep a Breach open for 30 seconds or longer.</p>
+          </div>
+        </div>
+        <div class="challenge" id="ch2">
+          <h2><span class="left-ornament"></span><span class="right-ornament"></span>Complete these encounters 1</h2>
+            <div class="ch-content">
+              <div>
+              <ul>
+                <li>Kill a Rogue Exile</li>
+                <li>Kill a <span class="rare">rare</span> monster with <span class="nemesis">Nemesis</span> mod</li>
+                <li>Kill all members of a <span class="bloodline">Bloodline</span> pack</li>
+                <li>Kill a <span class="torment">Possessed</span> monster</li>
+                <li>Open any Strongbox of Abundance</li>
+                <li>Complete a Master's Mission</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="challenge" id="ch3">
+          <h2><span class="left-ornament"></span><span class="right-ornament"></span>Use these currency items</h2>
+          <div class="ch-content cf">
+            <div class="leftcol">
+              <ul>
+                <li>Armourer's Scrap</li>
+                <li>Blacksmith's Whetstone</li>
+                <li> Chromatic Orb</li>
+                <li>Jeweller's Orb</li>
+              </ul>
+            </div>
+            <div class="rightcol">
+              <ul>
+                <li>Orb of Alchemy</li>
+                <li>Orb of Alteration</li>
+                <li>Orb of Augmentation</li>
+                <li>Orb of Transmutation</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="challenge" id="ch4">
+          <h2><span class="left-ornament"></span><span class="right-ornament"></span>Activate these waypoints</h2>
+          <div class="ch-content cf">
+            <p class="info">Activate the Waypoints in each of the following areas in Normal difficulty.</p>
+            <div class="leftcol">
+              <ul>
+                <li>The Northern Forest</li>
+                <li>The Caverns</li>
+                <li>The Marketplace</li>
+              </ul>
+            </div>
+            <div class="rightcol">
+              <ul>
+                <li>The Battlefront</li>
+                <li>The Docks</li>
+                <li>The Library</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="challenge" id="ch5">
+          <h2><span class="left-ornament"></span><span class="right-ornament"></span>Clear Vaal Side Area</h2>
+          <div class="ch-content cf">
+            <p class="info">Fully clear a Corrupted Vaal side area.</p>
+          </div>
+        </div>
+        <div class="challenge" id="ch6">
+          <h2><span class="left-ornament"></span><span class="right-ornament"></span>Kill these Normal Act bosses</h2>
+          <div class="ch-content">
+            <ul>
+              <li>Merveil, the Twisted <em>(Act 1)</em></li>
+              <li>Vaal Oversoul <em>(Act 2)</em></li>
+              <li>Dominus, Ascendant <em>(Act 3)</em></li>
+              <li>Malachai, the Nightmare <em>(Act 4)</em></li>
+            </ul>
+          </div>
+        </div>
+        <div class="challenge" id="ch7">
+          <h2><span class="left-ornament"></span><span class="right-ornament"></span>Kill these Cruel Act bosses</h2>
+          <div class="ch-content">
+            <ul>
+              <li>Merveil, the Twisted <em>(Act 1)</em></li>
+              <li>Vaal Oversoul <em>(Act 2)</em></li>
+              <li>Dominus, Ascendant <em>(Act 3)</em></li>
+              <li>Malachai, the Nightmare <em>(Act 4)</em></li>
+            </ul>
+          </div>
+        </div>
+        <div class="challenge" id="ch8">
+          <h2><span class="left-ornament"></span><span class="right-ornament"></span>Kill these Merciless Act bosses</h2>
+          <div class="ch-content">
+            <ul>
+              <li>Merveil, the Twisted <em>(Act 1)</em></li>
+              <li>Vaal Oversoul <em>(Act 2)</em></li>
+              <li>Dominus, Ascendant <em>(Act 3)</em></li>
+              <li>Malachai, the Nightmare <em>(Act 4)</em></li>
+            </ul>
+          </div>
+        </div>
+        <div class="challenge" id="ch9">
+          <h2><span class="left-ornament"></span><span class="right-ornament"></span>Use these Essences</h2>
+          <div class="ch-content cf">
+            <p class="info">Use each of the following Essences to upgrade or reforge items.</p>
+            <div class="leftcol">
+              <ul>
+                <li>Essence of Hatred</li>
+                <li>Essence of Woe</li>
+              </ul>
+            </div>
+            <div class="rightcol">
+              <ul>
+                <li>Essence of Greed</li>
+        <li>Essence of Contempt</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="challenge" id="ch10">
+          <h2><span class="left-ornament"></span><span class="right-ornament"></span>Kill 500 Breach Monsters</h2>
+          <div class="ch-content">
+            <p class="info">Kill 500 Monsters that have been revealed by Breaches</p>
+          </div>
+        </div>
+        <div class="challenge" id="ch11">
+          <h2><span class="left-ornament"></span><span class="right-ornament"></span>Complete these encounters 2</h2>
+          <div class="ch-content">
+            <ul>
+        <li>Kill a Rogue Witch <em>(Dena Lorenni, Igna Phoenix, Minara Anemina, Aria Vindicia)</em></li>
+        <li>Kill a monster possessed by two <span class="torment">Tormented Spirits</span></li>
+        <li>Fulfil a prophecy</li>
+        <li>Kill a <span class="bloodline">Shared Boon</span> Bloodline Pack</li>
+        <li>Kill a <span class="rare">rare</span> monster with <span class="nemesis">Inner Treasure</span> <em>(Nemesis mod) (Always drops a unique item on death) (Required monster level 40)</em></li>              
+        <li>Open a Arcanist's Strongbox <em>(Strongbox which drops currency that do not affect quality)</em></li>
+            </ul>
+          </div>
+        </div>
+        <div class="challenge" id="ch12">
+          <h2><span class="left-ornament"></span><span class="right-ornament"></span>Complete these Cruel quests</h2>
+          <div class="ch-content cf">
+            <p class="info">Complete each of the following quests in Cruel Difficulty.</p>
+            <div class="leftcol">
+              <ul>
+                <li>Mercy Mission <em>(Act 1)</em></li>
+                <li>Through Sacred Ground <em>(Act 2)</em></li>
+                <li>The Great White Beast <em>(Act 2)</em></li>
+              </ul>
+            </div>
+            <div class="rightcol">
+              <ul>
+                <li>Sever the Right Hand <em>(Act 3)</em></li>
+                <li>A Swig of Hope <em>(Act 3)</em></li>
+                <li>A Fixture of Fate <em>(Act 3)</em></li>           
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="challenge" id="ch13">
+          <h2><span class="left-ornament"></span><span class="right-ornament"></span>Complete these Master Missions</h2>
+          <div class="ch-content cf">
+            <ul>
+              <li>Vorici, Master Assassin <em>(10 times)</em></li>
+              <li>Tora, Master of the Hunt <em>(10 times)</em></li>
+              <li>Catarina, Master of the Dead <em>(10 times)</em></li>
+              <li>Haku, Armourmaster <em>(10 times)</em></li>
+              <li>Elreon, Loremaster <em>(10 times)</em></li>
+              <li>Vagan, Weaponmaster <em>(10 times)</em></li>
+              <li>Zana, Master Cartographer <em>(10 times)</em></li>
+            </ul>
+          </div>
+        </div>
+        <div class="challenge" id="ch14">
+          <h2><span class="left-ornament"></span><span class="right-ornament"></span>Currency from Vendor Recipes</h2>
+          <div class="ch-content cf">
+          <p class="info">Complete vendor recipes to receive each of the following items. A vendor recipe is when you trade a specific pattern of items to a vendor, not when you buy items from his/her purchase screen.</p>
+            <ul>
+              <li>Chromatic orb <em>(Any rarity item with linked blue, green and red socket)</em></li>
+              <li>Orb of Augmentation <em>(<span class="rare">Rare</span> item with at least 6 affixes <span class="or-conditional">OR</span> <a href="http://pathofexile.gamepedia.com/Vendor_recipe_system#Multiple_Rare_Items">Check here</a>)</em></li>
+              <li>Orb of Chance <em>(2 identified <span class="rare">rare</span> items with the same name <span class="or-conditional">OR</span> <span class="normal">Normal</span>, <span class="magic">magic</span>, <span class="rare">rare</span>, <span class="unique">unique</span> item of the same base item type <span class="or-conditional">OR</span> item level below 60 <span class="rare">rare</span> amulet, belt, 2x ring, gloves, boots, helmet, armour, 2h weapon/2x 1h weapon/1h weapon+shield/2x shield)</em></li> 
+              <li>Orb of Alchemy <em>(<a href="http://pathofexile.gamepedia.com/Vendor_recipe_system#Multiple_Rare_Items">Check here</a>)</em></li>
+              <li>Jeweller's Orb <em>(6 socketed item)</em></li>
+              <li>Vaal Orb <em>(7x Corrupted gem + Sacrifice fragment)</em></li>
+              <li>Chaos Orb <em>(Item level 60-74 <span class="rare">rare</span> amulet, belt, 2x ring, gloves, boots, helmet, armour, 2h weapon/2x 1h weapon/1h weapon+shield/2x shield)</em></li> 
+              <li>Cartographer's Chisel <em>(Any map + 20% quality Stone Hammer/Rock Breaker/Gavel)</em></li>
+            </ul>
+          </div>
+        </div>
+        <div class="challenge" id="ch15">
+          <h2><span class="left-ornament"></span><span class="right-ornament"></span>Gain Splinters from Monsters</h2>
+          <div class="ch-content cf">
+          <p class="info">Gain Splinters from the following unique <span class="breach">Breach Monsters</span></p>
+            <ul>
+              <li>Xoph, Dark Embers</li>
+              <li>Tul, Creeping Avalanche</li>
+              <li>Esh, Forked Thought</li>
+              <li>Uul-Netol, Unburdened Flesh</li>
+              <li>Chayula, Who Dreamt</li>
+            </ul>
+          </div>
+        </div>
+        <div class="challenge" id="ch16">
+          <h2><span class="left-ornament"></span><span class="right-ornament"></span>Kill these Vaal Bosses</h2>
+          <div class="ch-content">
+            <p class="info">These unique monsters belong to Corrupted Areas. Can be done on any difficulty.</p>
+            <ul>
+              <li>Torrent of Fear</li>
+              <li>Ossecati, Boneshaper</li>
+              <li>Shrapnelbearer</li>
+              <li>Konu, Maker of Wind <em>(Clouded Ridge <span class="or-conditional">from</span> The Ledge)</em></li>
+              <li>Quetzerxi <em>(Abandoned Dam <span class="or-conditional">from</span> The Dried Lake)</em></li>
+              <li>Commander of Flesh</li>
+              <li>Atziri's Pride</li>
+              <li>Kutec, Vaal Fleshsmith <em>(Secluded Copse <span class="or-conditional">from</span> The Northern Forest, The Weaver's Chambers, The Dread Thicket)</em></li>
+              <li>Perquil the Lucky</li>
+              <li>Coniraya, Shadow of Malice</li>
+            </ul>
+          </div>
+        </div>  
+        <div class="challenge" id="ch17">
+          <h2><span class="left-ornament"></span><span class="right-ornament"></span>Open a Unique Strongbox</h2>
+          <div class="ch-content cf">
+            <!--<p class="info">Complete each of the following quests in Cruel Difficulty.</p>-->
+            <div class="leftcol">
+              <ul>
+                <li>Redblade Cache</li>
+                <li>Mutewind Cache</li>
+              </ul>
+            </div>
+            <div class="rightcol">
+              <ul>
+                <li>Brinerot Cache</li>
+                <li>Renegades Cache</li>        
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="challenge" id="ch18">
+          <h2><span class="left-ornament"></span><span class="right-ornament"></span>Kill rare mosters in Cruel</h2>
+          <div class="ch-content">
+            <ul>
+              <li>Fighting Bull <em>(The Grand Arena)</em></li>
+              <li>Fury Hound <em>(Kaom's areas)</em></li>
+              <li>Hyrri's Sister <em>(Kaom's areas)</em></li>
+              <li>Kaom's Chosen <em>(Kaom's areas)</em></li>
+              <li>Lavianga's Acolyte <em>(Kaom's Stronghold)</em></li>
+              <li>Mad Gladiator <em>(The Grand Arena)</em></li>
+              <li>Pitbull Demon <em>(Daresso's Dream)</em></li>
+              <li>Rooster Demon <em>(Daresso's Dream)</em></li>
+            </ul>
+          </div>
+        </div>
+        <div class="challenge" id="ch19">
+          <h2><span class="left-ornament"></span><span class="right-ornament"></span>Identify 100 unique items</h2>
+        </div>
+        <div class="challenge" id="ch20">
+          <h2><span class="left-ornament"></span><span class="right-ornament"></span>Fully upgrade your Hideout</h2>
+          <div class="ch-content">
+            <p class="info">Large size hideout - requires any Master at level 7</p>
+          </div>
+        </div>
+        <div class="challenge" id="ch21">
+          <h2><span class="left-ornament"></span><span class="right-ornament"></span>Reach level 90</h2>
+          <div class="ch-content">
+          </div>
+        </div>
+        <div class="challenge" id="ch22">
+          <h2><span class="left-ornament"></span><span class="right-ornament"></span>Level a Gem to 20</h2>
+        </div>
+        <div class="challenge" id="ch23">
+          <h2><span class="left-ornament"></span><span class="right-ornament"></span>Identify Breach Uniques</h2>
+          <div class="ch-content cf">
+            <!--<p class="info">Complete each of the following quests in Cruel Difficulty.</p>-->
+            <div class="leftcol">
+              <ul>
+                <li>Fire</li>
+                <li>Cold</li>
+                <li>Lightning</li>
+              </ul>
+            </div>
+            <div class="rightcol">
+              <ul>
+                <li>Physical</li>
+                <li>Chaos</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="challenge" id="ch24">
+          <h2><span class="left-ornament"></span><span class="right-ornament"></span>Achieve Ascension</h2>
+          <div class="ch-content">
+            <p>Finish: Normal Labyrinth, Cruel Labyrinth, Merciless Labyrinth, Endgame Labyrinth</p>
+          </div>
+        </div>
+        <div class="challenge" id="ch25">
+          <h2><span class="left-ornament"></span><span class="right-ornament"></span>Complete these encounters 3</h2>
+          <div class="ch-content">
+            <ul>
+              <li>Kill a Warband Leader <em>(Prophecy <span class="or-conditional">OR</span> Overgrown Ruin Map <span class="or-conditional">OR</span> Warbands Zana mod)</em></li>
+              <li>Open 100 Strongboxes <em>(Ambush Zana mod)</em></li>
+              <li>Kill 100 <span class="nemesis">Nemesis</span> <span class="rare">rares</span> <em>(Nemesis Zana mod)</em></li>
+              <li>Open 10 Perandus Coffers <em>(Perandus Zana mod)</em></li>
+            </ul>
+          </div>
+        </div>
+        <div class="challenge" id="ch26">
+          <h2><span class="left-ornament"></span><span class="right-ornament"></span>Kill Breachlords</h2>
+          <div class="ch-content cf">
+          <p class="info">Combine 100 splinters into a <span class="breach">Breachstone</span> and place in map device.</p>
+            <ul>
+              <li>Xoph, Dark Embers</li>
+              <li>Tul, Creeping Avalanche</li>
+              <li>Esh, Forked Thought</li>
+              <li>Uul-Netol, Unburdened Flesh</li>
+              <li>Chayula, Who Dreamt</li>
+            </ul>
+          </div>
+        </div>
+        <div class="challenge" id="ch27">
+              <h2><span class="left-ornament"></span><span class="right-ornament"></span>Upgrade Breach Unique Items</h2>
+              <div class="ch-content">
+                <ul>
+                  <li>Xoph's Inception</li>
+                  <li>The Formless Inferno</li>
+                  <li>Xoph'ethula's Heart</li>
+                  <li>Tulfall</li>
+                  <li>The Perfect Form</li>
+                  <li>The Pandemonius</li>
+                  <li>Hand of Wisdom and Action</li>
+                  <li>Esh's Visage</li>
+                  <li>Choir of the Storm</li>
+                  <li>The Red Trail</li>
+                  <li>Uul-Netol's Embrace</li>
+                  <li>Surrender</li>
+                  <li>United in Dream</li>
+                  <li>Skin of the Lords</li>
+                  <li>The Red Nightmare</li>
+                  <li>The Green Nightmare</li>
+                  <li>The Blue Nightmare</li>
+                </ul>
+              </div>
+            </div>
+            <div class="challenge" id="ch28">
+              <h2><span class="left-ornament"></span><span class="right-ornament"></span>Kill these Beyond Demons</h2>
+              <div class="ch-content">
+                <p class="info">Kill 5 of the 6 Beyond Demons</p>
+                <ul>
+                  <li>Bameth, Shifting Darkness</li>
+                  <li>Ephij, Crackling Sky</li>
+                  <li>Haast, Unrelenting Frost</li>
+                  <li>Na'em, Bending Stone</li>
+                  <li>Tzteosh, Hungering Flame</li>
+                  <li>Abaxoth, the End of All That Is</li>
+                </ul>
+              </div>
+            </div>
+            <div class="challenge" id="ch29">
+              <h2><span class="left-ornament"></span><span class="right-ornament"></span>Create these Corrupted Jewels</h2>
+              <div class="ch-content cf">
+                <p class="info">Corrupt Jewels into any 8 of the following <span class="unique">Unique</span> Jewels</p>
+                <div class="leftcol">
+                  <ul>
+                    <li>Ancient Waystones</li>
+                    <li>Atziri's Reign</li>
+                    <li>Blood Sacrifice</li>
+                    <li>Combustibles</li>
+                    <li>Fragility</li>
+                    <li>Chill of Corruption</li>
+                    <li>Hungry Abyss</li>
+                    <li>Pacifism</li>
+                    <li>Sacrificial Harvest</li>
+                  </ul>
+                </div>
+                <div class="rightcol">
+                  <ul>
+                    <li>Self-Flagellation</li>
+                    <li>Weight of Sin</li>
+                    <li>Brittle Barrier</li>
+                    <li>Corrupted Energy</li>
+                    <li>Fevered Mind</li>
+                    <li>Mutated Growth</li>
+                    <li>Powerlessness</li>
+                    <li>Vaal Sentencing</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="challenge" id="ch30">
+              <h2><span class="left-ornament"></span><span class="right-ornament"></span>Complete unidentified Rare Maps</h2>
+              <div class="ch-content">
+                <p class="info">Have to complete at least 10 different tiers.</p>
+              </div>
+            </div>
+            <div class="challenge" id="ch31">
+              <h2><span class="left-ornament"></span><span class="right-ornament"></span>Kill these Beyond Demons</h2>
+              <div class="ch-content">
+                <p class="info">Complete 5 of the 6 mods</p>
+                <ul>
+                  <li>Nemesis monsters drop additional Currency Items</li>
+                  <li>Area contains Slipstreams</li>
+                  <li>Players cannot take Reflected Damage</li>
+                  <li>Area contains additional clusters of Mysterious Barrels</li>
+                  <li>Area contains hunted traitors</li>
+                  <li>Unique boss is accompanied by bodyguards</li>
+                </ul>
+              </div>
+            </div>
+            <div class="challenge" id="ch32">
+              <h2><span class="left-ornament"></span><span class="right-ornament"></span>Complete Atlas Bonus Objectives</h2>
+              <div class="ch-content">
+                <p class="info">Complete 25 bonus objects of maps T11 or higher.</p>
+              </div>
+            </div>
+            <div class="challenge" id="ch33">
+              <h2><span class="left-ornament"></span><span class="right-ornament"></span>Complete Twinned Maps</h2>
+              <div class="ch-content">
+                <p class="info">Kill bosses in all 15 different tiers of maps with Twinned mod.<br />Twinned mod: Area contains 2 unique bosses</p>
+              </div>
+            </div>
+            <div class="challenge" id="ch34">
+              <h2><span class="left-ornament"></span><span class="right-ornament"></span>Redeem Sets if Divination Cards</h2>
+              <div class="ch-content">
+                <p class="info">Redeem a set of each size up to 12</p>
+              </div>
+            </div>
+            <div class="challenge" id="ch35">
+              <h2><span class="left-ornament"></span><span class="right-ornament"></span>Complete Map Tiers</h2>
+              <div class="ch-content">
+                <p class="info">Complete 10000 map tiers. The tiers of the map that you've done gets added up.</p>
+              </div>
+            </div>
+            <div class="challenge" id="ch36">
+              <h2><span class="left-ornament"></span><span class="right-ornament"></span>Kill the Shaper</h2>
+            </div>
+            <div class="challenge" id="ch37">
+              <h2><span class="left-ornament"></span><span class="right-ornament"></span>Complete 3 endgame grinds</h2>
+              <div class="ch-content">
+                <p class="info">Complete any 3 of these encounters</p>
+                <ul>
+                  <li>Kill any of the Shaper's Guardians <em>(40)</em></li>
+                  <li>Kill Atziri in the Alluring Abyss <em>(10)</em></li>
+                  <li>Kill Izaro in the Endgame Labyrinth <em>(100)</em></li>
+                  <li>Kill any Breachlord <em>(100)</em></li>
+                  <li>Fulfil a Prophecy in a Map <em>(200)</em></li>
+                </ul>
+              </div>
+            </div>
+            <div class="challenge" id="ch38">
+              <h2><span class="left-ornament"></span><span class="right-ornament"></span>Kill Rare Monsters in Merciless</h2>
+              <div class="ch-content cf">
+                <p class="info">Kill one of each <span class="rare">rare</span> Monster</p>
+                <div class="leftcol">
+                  <ul>
+                    <li><em>In Kaom's Dream/Path</em></li>
+                    <li>Hyrri's Sister</li>
+                    <li>Kaom's Chosen</li>
+                    <li>Lavianga's Acolyte</li>
+                    <li>Fury Hound</li>
+                  </ul>
+                </div>
+                <div class="rightcol">
+                  <ul>
+                    <li><em>In Daresso's Dream/Arena</em></li>
+                    <li>Pitbull Demon</li>
+                    <li>Rooster Demon</li>
+                    <li>Mad Gladiator</li>
+                    <li>Fighting Bull</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="challenge" id="ch39">
+              <h2><span class="left-ornament"></span><span class="right-ornament"></span>Kill these Unique Monsters</h2>
+              <div class="ch-content cf">
+                <p class="info">Kill one of each <span class="unique">Unique</span> Monster</p>
+                <div class="leftcol">
+                  <ul>
+                    <li>Kole</li>
+                    <li>Spinecrack</li>
+                    <li>Thistlesage</li>
+                    <li>Trinian, Intellectus Prime</li>
+                  </ul>
+                </div>
+                <div class="rightcol">
+                  <ul>
+                    <li>Caliga, Imperatrix</li>
+                    <li>The Burning Man</li>
+                    <li>Triskeriaki</li>
+                    <li>Barkhul</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="challenge" id="ch40">
+              <h2><span class="left-ornament"></span><span class="right-ornament"></span>Enter a Breachlord's Domain</h2>
+              <div class="ch-content cf">
+                <p class="info">Combine 100 splinters into a Breachstone and use in mapping device.</p>
+                <div class="leftcol">
+                  <ul>
+                    <li>Uul-Netol's Domain</li>
+                    <li>Chayula's Domain</li>
+                    <li>Xoph's Domain</li>
+                  </ul>
+                </div>
+                <div class="rightcol">
+                  <ul>
+                    <li>Tul's Domain</li>
+                    <li>Esh's Domain</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+      <div id="completed" class="challenges">
+      </div>
+    </div><!-- #Main END -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.0/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui-touch-punch/0.2.3/jquery.ui.touch-punch.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
+    <script src="cookiebar.js"></script>
+    <script src="main.js"></script>
+  </body>
+</html>

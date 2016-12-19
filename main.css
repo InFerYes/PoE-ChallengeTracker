@@ -1,0 +1,240 @@
+/* normalize */
+html {
+    box-sizing: border-box;
+    font-family: sans-serif; 
+    font-size: 16px;
+    -ms-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+}
+
+body {
+    margin: 0;
+    background: #000;
+    color: #eee;
+}
+
+a { background-color: transparent; }
+a:active, a:hover { outline: 0; }
+b, strong { font-weight: bold; }
+img { border: 0; }
+
+/* box sizing first */
+*, *:before, *:after { box-sizing: inherit; }
+/* clearfix */
+.cf:before, .cf:after {
+    content: " ";
+    display: table;
+}
+
+.cf:after { 
+    clear: both; 
+}
+
+.cf {
+    *zoom: 1;
+}
+
+.leftcol, .rightcol, #notcompleted, #completed {
+    width: 45%;
+}
+
+.leftcol, #notcompleted {
+    float: left;
+}
+
+.rightcol, #completed {
+    float: right;
+}
+
+/* top to bottom */
+.wrap{
+    width: 80em;
+    margin: 0 auto;
+}
+.under{
+  text-decoration: underline;
+  color: #999;
+  margin-top: 3px;
+}
+.pre{
+  background: #800000;
+  padding: .25em;
+  width: 80%;
+  margin: 0 auto 1em;
+  text-align: center;
+}
+.guide{
+  background: #008018;
+  padding: .25em;
+  width: 80%;
+  margin: 0 auto 1em;
+  text-align: center;
+}
+
+.guide a{
+    color: #fff;
+}
+
+h1 {
+    font-family: 'Shadows Into Light', serif;
+    font-size: 3em;
+    text-align: center;
+    color: #af6025;
+}
+
+#notcompleted, #completed{
+    width: 45%;
+    margin: 0 2% 12px;
+    overflow: hidden;
+}
+
+.head{
+    font-size: 24px;
+    color: rgb(163, 141, 109);
+    margin-bottom: .5em;
+    font-family: 'Shadows Into Light', serif;
+}
+
+h2{
+    background: #aaa url("img/header-bg.png") 0 -54px repeat-x;
+    font-size: 1em;
+    color: #AF6025;
+    padding: 17px 1em;
+    position: relative;
+    margin: 0;
+    text-align: center;
+    border-bottom: 3px solid #1d0100;
+    text-shadow: 2px 2px 2px #000;
+}
+
+#completed{
+  min-height: 2000px;
+}
+
+#completed h2{
+    background-position: 0 0;
+    color: #fff;
+    text-shadow: 4px 4px 4px #000;
+}
+
+/* ornaments in headings */
+.left-ornament, .right-ornament{
+    display: block;
+    position: absolute;
+    background-repeat: no-repeat;
+    top: 0;
+    width: 44px;
+    height: 54px;
+    background-image: url("img/header-ornament.png");
+}
+
+.left-ornament { 
+    background-position: 0 -54px; left: 0; 
+}
+
+#completed .left-ornament { 
+    background-position: 0 0; 
+}
+
+.right-ornament { 
+    background-position: 100% -54px; right: 0; 
+}
+
+#completed .right-ornament { 
+    background-position: 100% 0; 
+}
+
+.ch-content{
+    border: solid #1d0100;
+    border-width: 0 3px 3px 3px;
+}
+
+/* TODO: change display of completed items so it can be toggled */
+#completed .ch-content{
+    display: none;
+}
+
+.info{
+    background: #222 url("img/info.png") 5px 50% no-repeat;
+    font-size: 14px;
+}
+
+
+ul, ol {
+    margin: 0;
+    padding: 1em;
+}
+
+li {
+    list-style: none;
+}
+
+h3 {
+    font-size: 1em;
+    color: rgb(163, 141, 109);
+    margin: 0;
+    padding: 6px 0 0 12px;
+}
+
+p {
+    margin: 0;
+    padding: 1em 1em 1em 40px;
+}
+em{ color: #999; }
+em strong{ color: #e7b478; }
+.ch-content a{ color: #0ff; }
+
+
+/* item types etc. */
+.normal             { color: #ddd; }
+.magic              { color: #99f; }
+.rare               { color: #fd0; }
+.unique             { color: #af6025; }
+
+.map-low            { color: #ddd; }
+.map-medium         { color: #fd0; }
+.map-high           { color: #f00; }
+
+.corrupted          { color: #d20000; }
+
+.currency           { color: #aa9e82;}
+.divcard            { color: #aae6e6;}
+.card               { display: block; }
+
+.nemesis            { color: #ff2800; }
+.torment            { color: #32e664; }
+.bloodline          { color: #d200dc; }
+.breach             { color: #7200e6; }
+
+.ge                 { color: #1ba29b; }
+.or-conditional     { color: #0f0; font-weight: bold;}
+.challenge          { margin-bottom: 1em; }
+
+.rewards{
+    width: 80%;
+    margin: 0 auto 2em;
+}
+.rewards p{
+    padding: 0 1em;
+    margin: 0;
+}
+.head{
+    padding: 0 1em;
+    color: rgb(163, 141, 109);
+}
+
+
+.place { border: 3px dashed #0066CC; min-height: 100px; background: #800000; margin-bottom: 1em; }
+.counter{text-align: center; }
+
+#cookie-bar {background:#111111; height:auto; line-height:24px; color:#eeeeee; text-align:center; padding:3px 0;}
+#cookie-bar.fixed {position:fixed; top:0; left:0; width:100%;}
+#cookie-bar.fixed.bottom {bottom:0; top:auto;}
+#cookie-bar p {margin:0; padding:0;}
+#cookie-bar a {color:#ffffff; display:inline-block; border-radius:3px; text-decoration:none; padding:0 6px; margin-left:8px;}
+#cookie-bar .cb-enable {background:#007700;}
+#cookie-bar .cb-enable:hover {background:#009900;}
+#cookie-bar .cb-disable {background:#990000;}
+#cookie-bar .cb-disable:hover {background:#bb0000;}
+#cookie-bar .cb-policy {background:#0033bb;}
+#cookie-bar .cb-policy:hover {background:#0055dd;}
