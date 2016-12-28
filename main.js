@@ -31,15 +31,13 @@ $(function() {
             addToCookie('notcompleted', '#notcompleted');
             addToCookie('completed', '#completed');
 
+            updateCounters();
+
         }
     }).disableSelection();
 });
 
-$(document).ready(function() {
-
-    restoreOrder('notcompleted', '#notcompleted');
-    restoreOrder('completed', '#completed');
-
+function updateCounters () {
     // REWARDS
     var ncom = $('#notcompleted .challenge').length;
     if(ncom === 40){
@@ -47,17 +45,22 @@ $(document).ready(function() {
     } else if(ncom > 0){
         $('.cND').html(ncom);
     } else if(ncom === 0) {
-        $('.cND').html('<span class="or">0 - WELL DONE</span>');
+        $('.cND').html('<span class="or-conditional">0 - WELL DONE</span>');
     }
 
     var com = $('#completed .challenge').length;
     if(com === 40){
-        $('.cD').html('<span class="or">40 - WELL DONE</span>');
+        $('.cD').html('<span class="or-conditional">40 - WELL DONE</span>');
     } else if(com > 0){
         $('.cD').html(com);
     } else if(com === 0) {
         $('.cD').html('<span class="corrupted">0</span>');
     }
+
+    //Avoid duplicate entries
+    $(".firstChallengeReward").empty();
+    $(".secondChallengeReward").empty();
+    $(".thirdChallengeReward").empty();
 
     // rewards
     // First challenge reward
@@ -88,5 +91,14 @@ $(document).ready(function() {
     } else {
         $('<p>You still need to complete ' + (thirdChallengeReward-com) + ' challenges to get Demonic Wings</p>').appendTo('.thirdChallengeReward');
     }
+}
+
+$(document).ready(function() {
+
+    restoreOrder('notcompleted', '#notcompleted');
+    restoreOrder('completed', '#completed');
+
+    updateCounters();
+
     $.cookieBar();
 });

@@ -13,6 +13,31 @@ body {
     color: #eee;
 }
 
+
+/* This shit will break if cursecdn url changes */
+@font-face {
+    font-family: "Fontin-Regular";
+    font-style: normal;
+    font-weight: 400;
+    src: local("Fontin-Regular"), local("Fontin-Regular"), url("https://hydra-media.cursecdn.com/hydra/fonts/Fontin-Regular.ttf") format("truetype");
+}
+@font-face {
+    font-family: "Fontin-Bold";
+    font-style: normal;
+    font-weight: 700;
+    src: local("Fontin-Bold"), local("Fontin-Bold"), url("https://hydra-media.cursecdn.com/hydra/fonts/Fontin-Bold.ttf") format("truetype");
+}
+@font-face {
+    font-family: "Fontin-Italic";
+    font-style: italic;
+    font-weight: 400;
+    src: local("Fontin-Italic"), local("Fontin-Italic"), url("https://hydra-media.cursecdn.com/hydra/fonts/Fontin-Italic.ttf") format("truetype");
+}
+@font-face {
+    font-family: "Fontin-SmallCaps";
+    src: local("Fontin-SmallCaps"), local("Fontin-SmallCaps"), url("https://hydra-media.cursecdn.com/hydra/fonts/Fontin-SmallCaps.ttf") format("truetype");
+}
+
 a { background-color: transparent; }
 a:active, a:hover { outline: 0; }
 b, strong { font-weight: bold; }
@@ -76,7 +101,7 @@ img { border: 0; }
 }
 
 h1 {
-    font-family: 'Shadows Into Light', serif;
+    font-family: "Fontin-Regular",Verdana,Arial,Helvetica,sans-serif;
     font-size: 3em;
     text-align: center;
     color: #af6025;
@@ -92,7 +117,7 @@ h1 {
     font-size: 24px;
     color: rgb(163, 141, 109);
     margin-bottom: .5em;
-    font-family: 'Shadows Into Light', serif;
+    font-family: "Fontin-Regular",Verdana,Arial,Helvetica,sans-serif;
 }
 
 h2{
@@ -105,6 +130,7 @@ h2{
     text-align: center;
     border-bottom: 3px solid #1d0100;
     text-shadow: 2px 2px 2px #000;
+    font-family: "Fontin-Regular",Verdana,Arial,Helvetica,sans-serif;
 }
 
 #completed{
